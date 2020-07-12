@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-client = MongoClient("<URL HERE>")
+client = MongoClient("db url here")
 
 chat_db = client.get_database('chatdb')
 

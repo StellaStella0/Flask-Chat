@@ -1,8 +1,6 @@
 // Connect to the socket
 const socket = io.connect('http://127.0.0.1:5000')
 
-console.log('test')
-
 socket.on('connect', () => {
     socket.emit('join_room', {
         username: username,
